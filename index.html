@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>todolist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib\jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib\materialize\css\materialize.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assert\css\style.css" />
+</head>
+<body>
+    <ul id="slide-mobile" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assert/img/office.jpg">
+                </div>
+                <a href="user.html"><img class="circle" src="assert/img/avatar-defualt.svg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <!-- <li><a href="#!">First Link With Icon</a></li> -->
+        <!-- <li><div class="divider"></div></li> -->
+        <li><a class="subheader">任务列表</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal" tabindex="0">任务集一</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">任务列表一</a></li>
+                            <li><a href="#">任务列表一</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal" tabindex="0">任务集一</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">任务列表一</a></li>
+                            <li><a href="#">任务列表一</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <main>
+        <!-- nav bar -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-mobile" class="sidenav-trigger"><i class="fa fa-navicon" style="font-size: 20px;display: inline;"></i></a>
+                <a href="#" class="brand-logo center">TodoList</a>
+                <ul class="right">
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fa fa-ellipsis-v" style="font-size: 20px;display: inline;"></i></a>
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="index.html">四象限</a></li>
+                            <li><a href="index.html">时间轴</a></li>
+                            <li><a href="tracking.html">查看进度</a></li>
+                            <li><a href="task_detail.html">添加任务</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="tasks-list">
+            <ul id="list-mod" class="collection" style="display:none">
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle">folder</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle green">insert_chart</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red">play_arrow</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            </ul>
+
+            <div id="quadrant-mod" style="display:block">
+                <div id="prio-1" class="tasks-pannel">
+                    <div class="pannel-title">很重要-很紧急</div>
+                    <ul class="pannel-list">
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                        <li class="pannel-list-item">
+                            <p><i class="fa fa-check-square-o"></i> 任务一任务一任务一任务一任务一任务一</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="prio-2" class="tasks-pannel">
+                    <div class="pannel-title">很重要-不紧急</div>
+                </div>
+                <div id="prio-3" class="tasks-pannel">
+                    <div class="pannel-title">不重要-很紧急</div>
+                </div>
+                <div id="prio-4" class="tasks-pannel">
+                    <div class="pannel-title">不重要-不紧急</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="lib\materialize\js\materialize.min.js"></script>
+    <script src="assert\js\dropdown.js"></script>
+    <script src="assert\js\sidenav.js"></script>
+</body>
+</html>

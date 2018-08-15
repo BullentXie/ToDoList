@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>任务管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib\jquery-3.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="lib\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib\materialize\css\materialize.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assert\css\style.css" /> 
+</head>
+<body>
+    <ul id="slide-mobile" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assert/img/office.jpg">
+                </div>
+                <a href="user.html"><img class="circle" src="assert/img/avatar-defualt.svg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <!-- <li><a href="#!">First Link With Icon</a></li> -->
+        <!-- <li><div class="divider"></div></li> -->
+        <li><a class="subheader">任务列表</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal" tabindex="0">任务集一</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">任务列表一</a></li>
+                            <li><a href="#">任务列表一</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal" tabindex="0">任务集一</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">任务列表一</a></li>
+                            <li><a href="#">任务列表一</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <main id="detail">
+        <!-- nav bar -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-mobile" class="sidenav-trigger"><i class="fa fa-navicon" style="font-size: 20px;display: inline;"></i></a>
+                <a href="#" class="brand-logo center">TodoList</a>
+                <ul class="right">
+                    <li>
+                        <a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fa fa-ellipsis-v" style="font-size: 20px;display: inline;"></i></a>
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="index.html">四象限</a></li>
+                            <li><a href="index.html">时间轴</a></li>
+                            <li><a href="tracking.html">查看进度</a></li>
+                            <li><a href="task_detail.html">添加任务</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- form -->
+        <div class="row detail-form" style="overflow-x: hidden">
+            <form class="col s12">
+              <div class="row" style="border-bottom:solid 1px #aaa">
+                <div class="input-field col s12">
+                  <i class="fa fa-tasks prefix" style="color:#777"></i>
+                  <input id="task_name" type="text" class="validate">
+                  <label for="task_name">任务名</label>
+                </div>
+              </div>
+              <div class="row" style="border-bottom:dotted 1px #333">
+                <div class="input-field col s6">
+                  <input id="rewards" type="text" class="validate">
+                  <label for="rewards">奖励</label>
+                </div>
+                <div class="input-field col s6">
+                    <select>
+                    <option value="1" selected>很重要-很紧急</option>
+                    <option value="2">很重要-不紧急</option>
+                    <option value="3">不重要-很紧急</option>
+                    <option value="4">不重要-不紧急</option>
+                    </select>
+                    <label>任务优先级</label>
+                </div>
+
+              </div>
+              <div class="row" style="border-bottom:dotted 1px #333">
+                <div class="input-field col s6">
+                    <!-- <i class="fa fa-calendar prefix"></i> -->
+                    <input id="begin-date" type="text" class="datepicker">
+                    <label for="begin-date">开始年月</label>
+                </div>                
+                <div class="input-field col s6">
+                    <!-- <i class="fa fa-calendar prefix"></i> -->
+                    <input id="begin-time" type="text" class=" timepicker">
+                    <label for="begin-time">开始时间</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <!-- <i class="fa fa-calendar prefix"></i> -->
+                    <input id="finish-date" type="text" class="datepicker">
+                    <label for="finish-date">结束年月</label>
+                </div>                
+                <div class="input-field col s6">
+                    <!-- <i class="fa fa-calendar prefix"></i> -->
+                    <input id="finish-time" type="text" class=" timepicker">
+                    <label for="finish-time">开始时间</label>
+                </div>
+              </div>
+              
+              <div class="row" style="border-bottom:dotted 1px #333">
+                <div class="input-field col s12">
+                  <input id="task-description" type="text" class="validate">
+                  <label for="task-description">任务描述</label>
+                </div>
+              </div>
+
+              <div class="row subtask-list">
+                <p style="margin-left:10.5px">子任务列表</p>
+                <div class="input-field col s10">
+                        <i class="fa fa-square-o prefix"></i>
+                        <input placeholder="子任务" type="text" class="validate">
+                </div>
+                <div class="input-field col s10">
+                        <i class="fa fa-square-o prefix"></i>
+                        <input placeholder="子任务" type="text" class="validate">
+
+                </div>
+                <div class="input-field col s10">
+                        <i class="fa fa-square-o prefix"></i>
+                        <input placeholder="子任务" type="text" class="validate">
+                </div>
+              </div>
+
+              
+            </form>
+
+            
+        
+            
+            
+        </div>
+    </main>
+    <div class="bottom">
+        
+        <a class="waves-effect waves-light btn">删除</a>
+        <a class="waves-effect waves-light btn">提交</a>
+    </div>
+    <script src="lib\materialize\js\materialize.min.js"></script>
+    <script src="assert\js\dropdown.js"></script>
+    <script src="assert\js\sidenav.js"></script>
+    <script src="assert\js\detail.js"></script>
+</body>
+</html>

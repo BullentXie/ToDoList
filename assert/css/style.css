@@ -1,0 +1,162 @@
+/*************************全局样式*******************************/
+
+.fa{display:inline;}
+
+@media only screen and (min-width: 975px) {
+    main{
+        padding-left:300px;
+    }
+}
+.bottom{
+    padding:8px 0 8px 15px;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width:100%;
+    box-shadow: 1px 0 2px 2px #ccc;
+}
+
+
+/**************************index主页****************************/
+/*index任务列表四象限样式*/
+#quadrant-mod{
+    position: relative;
+}
+.tasks-pannel{
+    position: relative;
+    width:48%;
+    height:42vh;
+    float: left;
+    /* position: absolute; */
+    /* background-color: #ccc; */
+    
+    margin:2vh 1% 0vh 1%;
+    border-radius: 3px;
+    border:solid 1px #666;
+    /* box-shadow: 0 0 5px 5px #eee; */
+}
+
+.pannel-title{
+    height: 5vh;
+    position: absolute;
+    top:0;left:0;
+    width:100%;
+    border-bottom:solid 1px #333;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding:1vh 0 1vh 3vw;
+    font-size:2vh;
+    font-weight: 600;
+    background-color: #fff;
+    z-index: 9;
+}
+.pannel-list{
+    position: relative;
+    margin: 0;
+    padding:5vh 0 0 0;
+    overflow-y:scroll;
+    height:100%;
+}
+.pannel-list::-webkit-scrollbar {
+    display: none;
+}
+
+.pannel-list-item{
+    margin: 0;
+    padding:4px 8px 4px 8px;
+    border-bottom:solid 1px  #333;
+    cursor: pointer;
+}
+.pannel-list-item p{
+    width:90%;
+    display: inline-block;
+    margin:0;
+    white-space:nowrap;  overflow:hidden;text-overflow: ellipsis;
+}
+
+
+
+/*********************tracking进度跟踪*************************/
+/*列表详情*/
+.list-description{
+    width:40%;
+    /* height:40vh; */
+    margin: 12px 10px 12px 10px;
+    float:left;
+}
+.list-description p{
+    margin:5px 0 5px 0;
+    white-space:nowrap;  overflow:hidden;text-overflow: ellipsis;
+}
+
+
+/*****************跟踪进度样式*******************/
+/* #tf-schedule{display: none;}
+#tf-schedule h3{color:#999;} */
+/*雷达图*/
+#radar-map{
+    width:50%;
+    /* height:52vh; */
+    /* float:left; */
+    margin:0 auto;
+}
+#radar-map div{
+    overflow: auto !important;
+}
+/*燃尽图*/
+#burnout-map{
+    width:90%;
+    /* width:1500px; */
+    /* height:10px; */
+    /* float:left; */
+    margin:0 auto;
+}
+#burnout-map div{
+    overflow: auto !important;
+}
+/*甘特图*/
+#gantt-map{
+    width:90%;
+    /* width:1000px; */
+    /* height:450px; */
+    /* float:left; */
+    margin:0 auto;
+}
+#gantt-map div{
+    overflow: auto !important;
+}
+
+
+
+
+/************************detail任务详情****************************/
+.detail-form{
+    height:80vh;
+    position: relative;
+}
+.detail-radios p{
+    float: left;
+}
+.detail-radios p label span{
+    display:none;
+}
+
+.bottom .btn{
+    float: right;
+    margin-right:10px;
+}
+
+.subtask-list .input-field{
+    margin:0;
+}
+.subtask-list .input-field i{
+    font-size: 20px !important;
+    color:#777;
+}
+.subtask-list .input-field input{
+    margin-left:23px;
+    height:25px;
+    font-size: 12px !important;
+    padding:0;
+}
+
