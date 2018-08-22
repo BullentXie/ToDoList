@@ -2,7 +2,6 @@
 /**************************雷达图**************************/
 radar = document.getElementById('radar-map');
 
-
 optionRadar = {
     title: {
         text: '雷达图'

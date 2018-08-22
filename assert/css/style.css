@@ -95,7 +95,7 @@
 #tf-schedule h3{color:#999;} */
 /*雷达图*/
 #radar-map{
-    width:50%;
+    width:80%;
     /* height:52vh; */
     /* float:left; */
     margin:0 auto;
@@ -105,7 +105,7 @@
 }
 /*燃尽图*/
 #burnout-map{
-    width:90%;
+    width:70%;
     /* width:1500px; */
     /* height:10px; */
     /* float:left; */
@@ -116,7 +116,7 @@
 }
 /*甘特图*/
 #gantt-map{
-    width:90%;
+    width:70%;
     /* width:1000px; */
     /* height:450px; */
     /* float:left; */
@@ -126,6 +126,27 @@
     overflow: auto !important;
 }
 
+#taskStatic-table{
+    width:70%;
+    /* width:1000px; */
+    /* height:450px; */
+    /* float:left; */
+    margin:0 auto;
+}
+#taskStatic-table div{
+    overflow: auto !important;
+}
+
+#taskTime-table{
+    width:70%;
+    /* width:1000px; */
+    /* height:450px; */
+    /* float:left; */
+    margin:0 auto;
+}
+#taskTime-table div{
+    overflow: auto !important;
+}
 
 
 
@@ -160,3 +181,9 @@
     padding:0;
 }
 
+
+/********成就系统相关参数********/
+.achieve-pic{
+    width:70%;
+    margin:0 auto;
+}
